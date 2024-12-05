@@ -1,0 +1,126 @@
+.box-3d {
+    border: 5px groove #ccc; /* Borda 3D */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.7); /* Sombras 3D */
+    width: 90%;
+    max-width: 100px; /* Limita a largura máxima */
+    margin: auto; /* Centraliza o elemento */
+}
+
+.custom-video { 
+    width: 180px; /* Largura do vídeo */
+    height: 180px;  /* Altura do vídeo */
+}
+
+.custom-videodescritivo {
+    display: block;
+    margin: 0 auto;
+    width: 320px; /* ou o tamanho desejado */
+    height: 320px; /* ajuste conforme necessário */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.video-container {
+    text-align: center;
+    flex-direction: column; /* Adiciona essa linha */
+}
+
+.video-container p {
+    display: block;
+    margin: 10px auto;
+    max-width: 320px;
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 2rem; /* Ajusta o tamanho do título */
+    margin: 0; /* Remove margens extras */
+    font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    
+}  
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a0e0e0e;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 90px; /* Ajuste o valor conforme necessário */
+}
+
+.foto-cabeçalho {
+    width: 150px;
+    height: auto;
+    border-radius: 110%;
+    margin-right: 10px;
+}
+
+.h3-cabeçalho {
+    font-size: 1.8rem; /* Ajusta o tamanho do título */
+    margin: 0; /* Remove margens extras */
+}
+
+.icon-link {
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.icon-link:hover {
+    text-decoration: none; /* Garante que o sublinhado não apareça ao passar o mouse */
+}
+
+.d-flex.gap-3 {
+    gap: 1rem; /* Espaçamento horizontal entre os ícones */
+}
+
+.flipbook-container {
+    perspective: 1500px; /* Profundidade 3D */
+}
+
+.flipbook {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d; /* Preserva o estilo 3D para o conteúdo */
+    transition: transform 1s; /* Transição suave */
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #351818;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    backface-visibility: hidden; /* Esconde a parte de trás durante a transição */
+}
+
+.front {
+    background-color: lightblue;
+}
+
+.back {
+    background-color: lightgreen;
+    transform: rotateY(180deg); /* Gira a página de trás */
+}
+
+.flipbook:hover {
+    transform: rotateY(180deg); /* Ativa o efeito de virar a página ao passar o mouse */
+}
+div {
+    scroll-margin-top: 70px; /* Altura da navbar */
+}
